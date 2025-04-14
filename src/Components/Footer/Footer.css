@@ -1,0 +1,151 @@
+/* Footer Section Styles */
+.footer-section {
+  background-color: #282828;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Ensures spacing between sections */
+}
+
+.footer-address-social,
+.footer-about-us,
+.footer-services,
+.footer-map {
+  flex: 1;
+  margin-bottom: 20px; /* Consistent bottom margin */
+}
+
+/* Add the ">" symbol before each <a> tag except for social icons */
+.footer-section a:not(.social-icon)::before {
+  content: "> ";
+  color: #fff;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Address and Social Icons */
+.footer-address h4,
+.footer-social-icons h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-address p,
+.footer-social-icons a {
+  font-size: 16px;
+}
+
+.footer-address i,
+.footer-social-icons a {
+  margin-right: 10px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Social Icon Colors */
+.facebook:hover {
+  color: #3b5998;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.instagram:hover {
+  color: #e1306c;
+}
+
+/* About Us & Services Sections */
+.footer-about-us,
+.footer-services {
+  flex: 1;
+}
+
+.footer-about-us ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-about-us li,
+.footer-services li {
+  margin: 8px 0;
+}
+
+.footer-about-us a,
+.footer-services a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.footer-about-us a:hover,
+.footer-services a:hover {
+  color: #555;
+  letter-spacing: 2px;
+}
+
+/* Map Section */
+.footer-map {
+  flex: 1;
+}
+
+.map-container iframe {
+  border: none;
+  width: 100%;
+  height: 200px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.footer-bottom-text {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-bottom-text {
+    font-size: 12px;
+  }
+
+  /* Map Section */
+  .footer-map iframe {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+}

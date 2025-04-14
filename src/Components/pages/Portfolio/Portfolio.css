@@ -1,0 +1,276 @@
+/* Filter buttons styling */
+.filter-buttons {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Added to allow buttons to wrap on smaller screens */
+}
+
+.portfolio-container .header-section {
+  background-color: #dddd;
+  height: max-content;
+}
+.filter-buttons button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.filter-buttons button.active {
+  background: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.filter-buttons button:hover {
+  background: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Full-width image and navigation at the top */
+.header-section {
+  position: relative;
+  width: 100%;
+  height: 20vh; /* Adjust the height as per your design */
+  background-color: #333;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.nav-links {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap; /* Allows wrapping of links on smaller screens */
+}
+
+.nav-links p {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #5555;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.portfolio-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Project Cards */
+.project-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allows the cards to wrap */
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  height: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+  width: 300px; /* Default width for cards */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+  backdrop-filter: blur(1px);
+}
+
+.overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  transition: margin-top 0.3s ease;
+}
+
+.project-card:hover .overlay h3 {
+  margin-top: 20px;
+}
+
+.overlay .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.overlay .links a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.overlay .links a:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1024px) {
+  .portfolio-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-section p {
+    font-size: 1rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .overlay h3 {
+    font-size: 1.3rem;
+  }
+
+  .overlay .links a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-section p {
+    font-size: 0.9rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .overlay .links a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    font-size: 0.9rem;
+    flex-direction: column; /* Stack the navigation links */
+  }
+
+  .header-section {
+    height: 25vh; /* Slightly adjust height for small screens */
+  }
+
+  .header-overlay {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .project-card {
+    width: 100%; /* Full width for cards on small screens */
+  }
+
+  .overlay h3 {
+    font-size: 1.1rem;
+  }
+
+  .overlay .links a {
+    font-size: 1.2rem;
+  }
+}

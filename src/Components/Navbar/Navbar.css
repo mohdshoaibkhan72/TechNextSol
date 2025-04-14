@@ -1,0 +1,245 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Playfair+Display:wght@700&display=swap");
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Section */
+.Navbar-section {
+  height: 7vh;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+.Navbar-section p {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Logo */
+.logo img {
+  max-height: 50px;
+  width: auto;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar-links li {
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Flip Text Links */
+.flip-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.flip-text:hover {
+  color: #555;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content li a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+  color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Sticky Navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 1.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hidden Navbar */
+.navbar-hidden {
+  top: -10vh;
+}
+
+/* Contact Button */
+.contact-section .contact-button {
+  background: #684df4;
+
+  margin: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.contact-section .contact-button:hover {
+  background: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Top Bar Section (log) */
+.log {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #684df4;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.log div {
+  margin-left: 30px;
+}
+
+.log .i a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.log .logo img {
+  max-height: 50px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .Navbar-section {
+    padding: 10px 15px;
+  }
+
+  .Navbar-section p {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .navbar-links {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.show {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  /* Contact Button */
+  .contact-section .contact-button {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+    border-radius: 30px;
+  }
+
+  /* Top Bar (log) adjustments */
+  .log {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .log div {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .log .i {
+    display: none;
+  }
+}

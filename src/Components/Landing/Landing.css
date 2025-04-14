@@ -1,0 +1,258 @@
+/* Global Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Common button styles */
+.cta-button1,
+.contactus1 {
+  padding: 15px 35px;
+  margin: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+}
+
+/* Specific for cta-button1 */
+.cta-button1 {
+  background: #684df4;
+}
+
+/* Specific for contactus */
+.contactus1 {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+/* Slider Container */
+.slider {
+  display: flex;
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Landing Page Section */
+.landing-page {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+}
+
+/* Left Section (Text Content) */
+.leftdiv {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 120px;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.leftdiv.animate {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leftdiv h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.leftdiv p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.cta-button1:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.cta-button1:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Right Section (Image Content) */
+.rightdiv {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Dots Navigation */
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* === Responsive Design === */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+  .landing-page {
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .leftdiv h1 {
+    font-size: 3rem;
+  }
+
+  .leftdiv p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+  }
+}
+
+/* Small Devices (Tablets & Large Mobiles) */
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    height: auto;
+  }
+
+  .leftdiv {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .leftdiv h1 {
+    font-size: 2.5rem;
+  }
+
+  .leftdiv p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .rightdiv {
+    padding: 10px;
+  }
+
+  .hero-image {
+    max-width: 80%;
+    border-radius: 15px;
+  }
+}
+
+/* Extra Small Devices (Mobiles) */
+@media (max-width: 480px) {
+  .leftdiv h1 {
+    font-size: 2rem;
+  }
+
+  .leftdiv p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-width: 70%;
+  }
+}
+.landing-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s ease;
+  display: flex;
+}
+
+.landing-page.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Keep your .leftdiv, .cta-button, .dot styles same as before */
