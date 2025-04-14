@@ -70,8 +70,12 @@ function AboutUs() {
             </button>
           )}
           <button className="call-button">
-            <i className="fas fa-phone-alt"></i> Call us on{" "}
-            <span>+91 1234567890</span>
+            <i className="fas fa-phone-alt">
+              <div className="wave"></div>
+            </i>
+            <div className="call-text">
+              Call Us <br /> <span>+91 7310249234</span>
+            </div>
           </button>
         </article>
 
