@@ -10,6 +10,12 @@
   flex-wrap: wrap;
 }
 
+.titleaboutus {
+  display: flex;
+
+  align-items: center;
+  flex-direction: row;
+}
 .leftside {
   flex: 1;
   display: flex;

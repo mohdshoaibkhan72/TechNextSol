@@ -44,9 +44,11 @@ function Services() {
             <img src={service.image} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <button className="call-button">Read More</button>
           </div>
         ))}
+      </div>
+      <div className="services-footer">
+        <button className="cta-button1">Explore more</button>
       </div>
     </div>
   );

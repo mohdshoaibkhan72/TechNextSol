@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Navbar Section */
@@ -130,7 +131,6 @@
 /* Contact Button */
 .contact-section .contact-button {
   background: #684df4;
-
   margin: 20px;
   font-size: 1.3rem;
   font-weight: 600;
@@ -241,5 +241,34 @@
 
   .log .i {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further tweaks for small screens */
+  .Navbar-section {
+    padding: 10px 10px;
+  }
+
+  .navbar-links li {
+    font-size: 14px;
+  }
+
+  .flip-text {
+    font-size: 14px;
+  }
+
+  .contact-section .contact-button {
+    font-size: 1rem;
+    padding: 5px 12px;
+  }
+
+  .log {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .log .logo img {
+    max-height: 30px;
   }
 }

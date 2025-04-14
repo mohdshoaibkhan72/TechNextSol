@@ -3,7 +3,7 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import "./AboutUs.css";
 import poster from "../../assets/images/aboutimg.png";
 import img5 from "../../images/routesimg.jpg";
-
+import aboutus from "../../assets/images/title_shape_1.svg";
 function AboutUs() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
@@ -31,7 +31,12 @@ function AboutUs() {
         </div>
 
         <article className="rightside">
-          <h1 className="h1">About Us</h1>
+          <div className="titleaboutus">
+            {" "}
+            <h1 className="h1">About Us</h1>
+            <img src={aboutus} alt="aboutus" />
+          </div>
+
           <h2>
             We Are Increasing Business Success With{" "}
             <span className="h1">TechNext Solution</span>
