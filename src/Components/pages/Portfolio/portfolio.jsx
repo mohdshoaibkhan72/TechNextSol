@@ -10,13 +10,13 @@ const projects = [
   {
     title: "TechNext Solution",
     image: img2,
-    liveLink: "https://technextsolution.vercel.app/",
+    liveLink: "https://technextsolution.com",
     type: "Static Websites",
   },
   {
     title: "Paisa4you",
     image: img3,
-    liveLink: "https://www.paisa4you.com/",
+    liveLink: "https://www.a2fintech.com/",
     type: "Static Websites",
   },
   {
