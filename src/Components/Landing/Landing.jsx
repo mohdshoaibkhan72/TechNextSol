@@ -3,7 +3,7 @@ import "./Landing.css";
 import Spinner from "..//Spinner/Spinner";
 
 import img1 from "../../images/homeimg.jpg";
-import img2 from "../../images/homeimg.jpg";
+import img2 from "../../images/homeimg3.jpg";
 import img3 from "../../images/homeimg2.jpg";
 
 const slides = [
