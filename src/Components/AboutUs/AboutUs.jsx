@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import "./AboutUs.css";
-import poster from "../../assets/images/aboutimg.png";
+import poster from "../../images/aboutus.jpeg";
 import img5 from "../../images/routesimg.jpg";
 import aboutus from "../../assets/images/title_shape_1.svg";
 function AboutUs() {

@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Landing.css";
 import Spinner from "..//Spinner/Spinner";
 
-import img1 from "../../assets/images/1.svg";
-import img2 from "../../assets/images/2.svg";
-import img3 from "../../assets/images/3.svg";
+import img1 from "../../images/homeimg.jpg";
+import img2 from "../../images/homeimg.jpg";
+import img3 from "../../images/homeimg2.jpg";
 
 const slides = [
   {

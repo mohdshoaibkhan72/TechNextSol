@@ -11,7 +11,7 @@
 .services-container h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #6e55f4;
+  color: #eae6ff;
 }
 
 /* Cards layout */
@@ -46,7 +46,7 @@
   right: 0;
   width: 60px;
   height: 60px;
-  background-color: #6e55f4;
+  background-color: #eae6ff;
   background-image: url("../../assets/images/service_bg_1.png");
   background-size: cover;
   background-position: center;
@@ -98,7 +98,7 @@
 
 .service-card h3 {
   font-size: 20px;
-  color: #6e55f4;
+  color: #eae6ff;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }

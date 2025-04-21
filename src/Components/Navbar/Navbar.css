@@ -130,7 +130,7 @@
 
 /* Contact Button */
 .contact-section .contact-button {
-  background: #684df4;
+  background: #2a7b9b;
   margin: 20px;
   font-size: 1.3rem;
   font-weight: 600;
@@ -155,7 +155,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #684df4;
+  background-color: #2a7b9b;
   color: #fff;
   font-weight: 600;
   padding: 10px 20px;

@@ -41,7 +41,7 @@
 .rightside h1 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #6e55f4;
+  color: #eae6ff;
   margin-bottom: 0.625rem;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.625rem;
@@ -49,7 +49,7 @@
 
 .h1 {
   font-size: 1.7rem;
-  color: #6e55f4;
+  color: #eae6ff;
   margin-bottom: 1.25rem;
 }
 
@@ -74,7 +74,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background-color: #684df4;
+  background-color: #2a7b9b;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -88,7 +88,7 @@
   color: black;
   padding: 12px 20px;
   font-size: 1.1rem;
-  border: 1px solid #6e55f4;
+  border: 1px solid #eae6ff;
   border-radius: 5px;
   align-items: center;
   cursor: pointer;
@@ -235,7 +235,7 @@
   position: absolute;
   bottom: 108px;
   left: 371px;
-  background-color: #6e55f4;
+  background-color: #eae6ff;
   color: white;
   font-weight: bold;
   font-size: 1rem;
@@ -270,7 +270,7 @@
   position: relative; /* To position the wave around the icon */
   margin-right: 10px;
   font-size: 20px;
-  background-color: #6e55f4; /* Blue background for the icon */
+  background-color: #eae6ff; /* Blue background for the icon */
   color: white; /* White color for the icon */
   border-radius: 50%; /* Circular icon background */
   padding: 10px; /* Padding to make the icon appear circular */
@@ -292,7 +292,7 @@
   left: 50%;
   width: 30px;
   height: 30px;
-  background-color: #6e55f4; /* Light purple color */
+  background-color: #eae6ff; /* Light purple color */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: wave-animation 2.5s infinite ease-out;
@@ -316,7 +316,7 @@
 
 /* Styling for the phone number text */
 .call-text span {
-  color: #6e55f4; /* Color for the phone number */
+  color: #eae6ff; /* Color for the phone number */
   font-size: 18px;
   font-weight: bold;
 }
